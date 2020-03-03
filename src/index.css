@@ -1,8 +1,15 @@
 body {
   background-color: rgb(235, 229, 229);
   display: flex;
+  padding: 0px;
   flex-direction: row;
   justify-content: center;
+}
+
+h6 {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(172, 105, 105);
 }
 
 .app-content {
@@ -159,4 +166,14 @@ span {
 
 .item-button:active {
   box-shadow: 1px 1px 2px 1px whitesmoke inset, 0px 0px #666;
+}
+
+@media (max-width: 550px) {
+  .app-content {
+    margin: 0px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
 }

@@ -45,6 +45,7 @@ class App extends React.Component {
     return (
       <div className="app-content">
         <h1>PRODUCT INVENTORY APP</h1>
+
         <InputAndButtonArea addItem={this.addItem} />
         <ListHeader inventoryLength={this.state.inventory.length} />
         <ul>
@@ -60,6 +61,7 @@ class App extends React.Component {
             );
           })}
         </ul>
+        <h6>&#174; 2020 JGuerrero</h6>
       </div>
     );
   }
