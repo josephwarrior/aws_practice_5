@@ -10,8 +10,8 @@ class App extends React.Component {
     this.state = {
       inventory: [
         { name: "Books", quantity: 0 },
-        { name: "Pencils", quantity: 2 }
-      ]
+        { name: "Pencils", quantity: 2 },
+      ],
     };
   }
 
@@ -22,22 +22,22 @@ class App extends React.Component {
           invItem.quantity += variation;
         }
         return invItem;
-      })
+      }),
     }));
   };
 
-  deleteItem = index => {
+  deleteItem = (index) => {
     this.setState((prevState, props) => ({
       inventory: prevState.inventory.filter((invItem, invIndex) => {
         return invIndex !== index;
-      })
+      }),
     }));
   };
 
-  addItem = newItemName => {
+  addItem = (newItemName) => {
     const newItem = { name: newItemName, quantity: 0 };
     this.setState((prevState, props) => ({
-      inventory: [...prevState.inventory, newItem]
+      inventory: [...prevState.inventory, newItem],
     }));
   };
 
