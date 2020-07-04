@@ -13,8 +13,8 @@
   },
   "homepage": "https://josephwarrior.github.io/inventory_add",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d dist"
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",

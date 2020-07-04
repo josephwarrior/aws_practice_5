@@ -7,13 +7,14 @@ module.exports = {
   devtool: "source-map",
   output: {
     filename: "index.js",
+    path: path.resolve(__dirname, "dist"),
   },
-  resolve: {
+  /*   resolve: {
     extensions: [".js", ".jsx", ".svg"],
-  },
+  }, */
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: "./src/index.html",
     }),
   ],
   module: {
